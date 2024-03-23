@@ -1,0 +1,82 @@
+
+
+.nav-logo{
+  &__container{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    color: #fff;
+    & .img{
+      width: 60px;
+      margin-top: -6px;
+    }
+    & .title{
+      color: #000;
+      margin-top: 4px;
+      margin-left: 4px;
+      line-height: 60px;
+      font-weight: bold;
+      font-size: 24px;
+      font-family: Avenir, Helvetica Neue, Arial, Helvetica, sans-serif;
+    }
+  }
+}
+.nav-name{
+  flex: 1;
+  &__container{
+    &.ant-menu-overflow{
+      border-bottom: 0 !important;
+    }
+    .ant-menu-title-content{
+      font-size: 14px;
+      font-weight: 500;
+    } 
+  }
+}
+.search-bar{
+  &__container{
+    margin-right: 20px;
+    .ant-input-affix-wrapper{
+      border-color: #6995ea;
+      border-radius: 26px;
+    }
+    .ant-input-group-addon{
+      border-color: #6995ea;
+      border-top-left-radius: 26px;
+      border-bottom-left-radius: 26px;
+      color: #1777ff;
+    }
+  }
+}
+
+.user{
+  &__container{
+    width: 150px;
+  }
+}
+
+.ml-1{
+  margin-left: 8px;
+}
+.ml-2{
+  margin-left: 16px;
+}
+
+.login-form{
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 8px 6px 0 rgba(0, 0, 0, 0.03), 0 1px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px 0 rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  padding: 25px 30px;
+  &__title{
+    font-size: 20px;
+  }
+  &__container{
+    padding: 30px 0;
+    width: 320px;
+    .login-form-button {
+      width: 100%;
+    }
+    
+  }
+}

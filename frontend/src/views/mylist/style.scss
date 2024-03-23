@@ -1,0 +1,95 @@
+.header {
+	display: flex;
+  flex-direction: row;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0 40px;
+}
+.chart_container {
+  display: flex;
+  flex-direction: column;
+	width: 100%;
+  align-items: center;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 450px) {
+	.header {
+		flex-direction: column;
+	}
+}
+
+.dynamic-delete-button {
+  margin: 0 4px;
+  color: #999;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dynamic-delete-button:hover {
+  color: red;
+}
+
+.field_container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0;
+}
+
+.booking-card{
+	margin-bottom: 10px !important;
+}
+
+.card-content__container{
+	.title-line{
+		.title{
+			color: #3d4250;
+			font-size: 16px;
+			font-weight: bold;
+			width: 80%;
+			overflow: hidden;
+			display: block;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			}
+		.price{
+			font-size: 16px;
+			color: #0d56e4;
+		}
+	}
+	.rate-line{
+		color: #636b7d;
+		.text{
+			font-size: 12px;
+		}
+		.ant-rate{
+			font-size: 16px;
+			.ant-rate-star{
+				margin-inline-end: 0 !important;
+			}
+		}
+		.rate-text{
+			margin-left: 8px;
+			font-size: 12px;
+			vertical-align: top;
+		}
+	}
+	
+	
+}
+.ant-card-body{
+	padding: 24px 12px !important;
+	cursor: pointer;
+}
+
+.edit-form{
+	.ant-image{
+		margin-right: 12px;
+		border: 1px dashed #d3d3d3;
+		border-radius: 8px;
+	}
+}

@@ -1,0 +1,120 @@
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &_Title_address{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+  }
+  &_image{
+    width: 100%;
+  }
+
+  &_Info {
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+
+    &_bookBtn {
+      display: block;
+      margin-bottom: 10px;
+      margin-right: 10px;
+    }
+
+  }
+}
+
+.detail{
+  &__main-info{
+    padding: 12px;
+    .image__container{
+      padding: 10px 30px 40px 30px;
+      img.ant-image-img{
+        border-radius: 20px;
+      }
+      .ant-image-mask{
+        border-radius: 20px;
+      }
+    .ant-image{
+      border-radius: 20px;
+    }
+    }
+    .room-desc__container{
+      display: flex;
+      flex-direction: column;
+      margin: 0px 40px;
+      padding: 20px 40px;
+      background-color: #fff;
+      border-radius: 20px;
+      .address{
+        display: flex;
+        align-items: center;
+        >span{
+          margin-right: 6px;
+          color: #898e9a;
+        }
+      }
+      .general-info{
+        margin: 20px 0 12px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .ant-tag{
+          padding-inline: 12px;
+          margin-right: 6px;
+          font-size: 14px;
+          background-color: #f1f6ff;
+          color: rgb(37, 44, 65);
+        }
+        .price{
+          font-size: 22px;
+          color: #0d64e5;
+          margin-right: 8px;
+          margin-left: 24px;
+
+        }
+      }
+      .book-btn{
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .detail{
+    &__main-info{
+      .image__container{
+        padding: 20px 10px;
+      }
+      .room-desc__container{
+        margin: 10px 0;
+      }
+    }
+}
+}
+
+@media screen and (max-width: 1400px) {
+  .detail{
+    &__main-info{
+      .image__container{
+        padding: 20px 20px;
+      }
+      .room-desc__container{
+        margin: 10px 20px;
+      }
+    }
+}
+}
+
+
+

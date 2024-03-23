@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  height: 100%;
+  width: 100vw;
+  & .nav-item{
+    width: 120px;
+  }
+  .ant-layout{
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}
+.ant-layout-sider-children {
+  height: 100%;
+}
+
+.page{
+  &__container{
+    padding: 20px 30px;
+    background-color: #f2f5fa;
+  }
+}
